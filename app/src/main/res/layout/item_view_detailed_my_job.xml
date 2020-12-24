@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="137dp"
+    android:background="#EDE7F6">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="15dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="28dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/g11331"
+            android:gravity="center_vertical|center_horizontal"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textColor="#1f1338"
+            android:textSize="30sp"
+            tools:text="Любовь В Организме" />
+
+        <TextView
+            style="@style/StyleForMainText"
+            android:id="@+id/textViewNamePoetOrUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="93dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            tools:text="Михаил Лермонтов" />
+
+        <TextView
+            style="@style/StyleForMainText"
+            android:id="@+id/textViewGenre"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="93dp"
+            android:layout_marginTop="83dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center_horizontal"
+            android:textSize="13sp"
+            tools:text="Про любовь" />
+
+        <TextView
+            android:id="@+id/textViewNumberLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:fontFamily="@font/g4201"
+            android:textColor="#1f1338"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewFavorite"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/ic_favorite_pink"
+            android:contentDescription="@string/like" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

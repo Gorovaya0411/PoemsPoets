@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_light_purple">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#EDE7F6"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewTitlePoem"
+                style="@style/StyleForNoticeableText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginRight="100dp"
+                android:maxLines="1"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/textViewForYourself"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Любовь" />
+
+            <CheckBox
+                android:id="@+id/checkBoxLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:button="@drawable/checkbox_selector_like"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBoxAddPoem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="4dp"
+                android:button="@drawable/checkbox_selector_add"
+                app:layout_constraintEnd_toStartOf="@+id/checkBoxLike"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewForYourself"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:hint="@string/add_to_his"
+                app:layout_constraintEnd_toStartOf="@+id/checkBoxLike"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="30dp"
+        android:background="#EDE7F6"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <Button
+            android:id="@+id/buttonNamePoet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EDE7F6"
+            android:fontFamily="@font/g20011"
+            android:textAllCaps="false"
+            android:textColor="#1f1338"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            tools:text="М.Ю.Лермонтов" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textViewGenre"
+        style="@style/StyleForMainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:text="Про любвовь" />
+
+
+    <TextView
+        android:id="@+id/textViewPoem"
+        style="@style/StyleForReadableText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGenre"
+        app:layout_constraintVertical_bias="0"
+        tools:text="Очень очень длинный стих" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

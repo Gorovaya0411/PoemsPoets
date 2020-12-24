@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home_screen_purple">
+
+    <TextView
+        android:id="@+id/applicationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/g17575"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="#EDE7F6"
+        android:textSize="65sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewEntrance"
+        android:layout_width="318dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewRegistration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/applicationName">
+
+        <Button
+            android:id="@+id/buttonEntrance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/g4201"
+            android:background="#EDE7F6"
+            android:text="@string/entrance"
+            android:textAllCaps="false"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewRegistration"
+        android:layout_width="318dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="270dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewEntrance">
+
+        <Button
+            android:id="@+id/buttonRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EDE7F6"
+            android:textAllCaps="false"
+            android:fontFamily="@font/g4201"
+            android:text="@string/registration_rus"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

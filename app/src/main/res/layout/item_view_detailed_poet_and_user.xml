@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="67dp"
+    android:background="#F3F3F5">
+
+
+    <TextView
+        style="@style/StyleForMainText"
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="70dp"
+        android:ellipsize="end"
+        app:layout_constraintHorizontal_bias="0"
+        android:maxLines="1"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewNumberLikes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Любовь"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="70dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/separating_strip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGenre"
+        android:contentDescription="@string/band" />
+
+
+    <TextView
+        android:id="@+id/textViewNumberLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/g4201"
+        android:textColor="#1f1338"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="25" />
+
+    <ImageView
+        android:id="@+id/imageViewFavorite"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/ic_favorite_pink"
+        app:layout_constraintEnd_toStartOf="@+id/textViewNumberLikes"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/like" />
+
+    <TextView
+        android:id="@+id/textViewGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/g4201"
+        android:textColor="#1f1338"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        tools:text="Про любовь" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

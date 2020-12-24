@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "361947100726",
+    "firebase_url": "https://poemspoets-9db16.firebaseio.com",
+    "project_id": "poemspoets-9db16",
+    "storage_bucket": "poemspoets-9db16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361947100726:android:440b685ea4e6fa72530a97",
+        "android_client_info": {
+          "package_name": "com.example.poemspoets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361947100726-uarsaaptvrg22jf5t1oi0ec6n2t9bgh7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.poemspoets",
+            "certificate_hash": "608f559516626c261ac5435d91d1d72c5404ffc8"
+          }
+        },
+        {
+          "client_id": "361947100726-81oia950h271qk8tlc27rvjegah15jvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZrvayzt0SBD1VpmFNXXZLjSctnJik87U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361947100726-81oia950h271qk8tlc27rvjegah15jvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

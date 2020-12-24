@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_light_purple">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#14ffffff"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewAdd"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/ic_add_circle_outline_purple_24dp"
+        android:contentDescription="@string/add_info"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAddInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:fontFamily="@font/g20011"
+        android:gravity="center_horizontal"
+        android:hint="@string/add_info"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAdd" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewProfile"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageViewAvatar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/avatar"
+            android:scaleType="centerCrop" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewUsernameOrNamePoet"
+        style="@style/StyleForMainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewProfile"
+        tools:text="Горовая К.И" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#7756c4"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsernameOrNamePoet">
+
+        <Button
+            android:id="@+id/buttonBiography"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="#7756c4"
+            android:fontFamily="@font/g4201"
+            android:gravity="center"
+            android:text="@string/biography"
+            android:textAllCaps="false"
+            android:textColor="#1f1338"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="320dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="281dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/g11331"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:textColor="#1f1338"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardViewBio"
+        app:layout_constraintEnd_toEndOf="@+id/cardViewBio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsernameOrNamePoet"
+        tools:text="Диалоговое окно. Статус" />
+
+
+    <ImageView
+        android:id="@+id/imageViewQuotationMarksUp"
+        android:layout_width="49dp"
+        android:layout_height="42dp"
+        android:contentDescription="@string/quotation_marks"
+        android:src="@drawable/ic_untitled_design_8"
+        app:layout_constraintStart_toStartOf="@+id/cardViewBio"
+        app:layout_constraintTop_toTopOf="@+id/textViewStatus" />
+
+    <ImageView
+        android:id="@+id/imageViewQuotationMarksDown"
+        android:layout_width="49dp"
+        android:layout_height="42dp"
+        android:contentDescription="@string/quotation_marks"
+        android:rotation="180"
+        android:src="@drawable/ic_untitled_design_8"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewStatus"
+        app:layout_constraintEnd_toEndOf="@+id/cardViewBio" />
+
+    <TextView
+        android:id="@+id/textViewInfoAvailable"
+        style="@style/StyleForMainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/info_available"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardViewBio"
+        app:layout_constraintEnd_toEndOf="@+id/cardViewBio"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewYourCommunication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/communication"
+        android:textAllCaps="true"
+        android:textColor="#1f1338"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStatus" />
+
+    <TextView
+        android:id="@+id/textViewCommunication"
+        style="@style/StyleForMainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:textIsSelectable="true"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewYourCommunication"
+        tools:text="https://vk.com/k.gorovaya1986" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerViewPoetAndUser"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCommunication" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

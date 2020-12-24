@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/myPoemFragment"
+        android:icon="@drawable/ic_added_poems"
+        android:title="@string/add_poem" />
+
+    <item
+        android:id="@+id/listPoetsFragment"
+        android:icon="@drawable/ic_poems"
+        android:title="@string/poets" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile" />
+
+
+</menu>

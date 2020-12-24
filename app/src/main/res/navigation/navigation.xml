@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/listPoetsFragment">
+
+
+
+    <fragment
+        android:id="@+id/myPoemFragment"
+        android:name="com.example.poemspoets.ui.fragments.myPoemScenes.MyPoemFragment"
+        android:label="fragment_my_poem"
+        tools:layout="@layout/fragment_my_poem" />
+    <fragment
+        android:id="@+id/listPoetsFragment"
+        android:name="com.example.poemspoets.ui.fragments.listPoets.ListPoetsFragment"
+        android:label="fragment_list_poets"
+        tools:layout="@layout/fragment_list_poets" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.poemspoets.ui.fragments.profileScenes.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

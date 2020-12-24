@@ -1,0 +1,77 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#1f1338</item>
+        <item name="colorPrimaryDark">#1f1338</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">#EDE7F6</item>
+        <item name="android:textColorHint">#EDE7F6</item>
+        <item name="backgroundTint">#EDE7F6</item>
+        <item name="android:ems">10</item>
+        <item name="fontFamily">@font/g4201</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="EditTextStyleAddPoem" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">#1f1338</item>
+        <item name="android:textColorHint">#1f1338</item>
+        <item name="backgroundTint">#1f1338</item>
+        <item name="android:ems">10</item>
+        <item name="fontFamily">@font/g4201</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#1f1338</item>
+        <item name="colorControlActivated">#1f1338</item>
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.Dialog.Alert.TestDialogTheme">
+        <item name="colorAccent">#DC143C</item>
+        <item name="colorPrimary">#DC143C</item>
+    </style>
+
+    <style name="StyleForTheMainText">
+        <item name="android:textColor">#1f1338</item>
+        <item name="colorPrimary">#DC143C</item>
+    </style>
+
+    <style name="StyleForMainButtons">
+        <item name="fontFamily">@font/g20011</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="StyleForMainText">
+        <item name="fontFamily">@font/g4201</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">#1f1338</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="StyleForReadableText">
+        <item name="fontFamily">@font/g20011</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">#1f1338</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textIsSelectable">true</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="StyleForNoticeableText">
+        <item name="fontFamily">@font/g11331</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">#DC143C</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+    <style name="StyleForHintsText">
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">#1f1338</item>
+    </style>
+
+</resources>
